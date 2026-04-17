@@ -4,7 +4,7 @@
 - Ứng dụng làm cảm biến xúc giác điện dung
 - Thực hành các thí nghiệm đo dữ liệu cảm biến
 ## B. Khó Khăn
-- Ứng dụng phương pháp ADCtouch
+- Ứng dụng phương pháp trong ADCtouch
 ## C. Báo cáo chi tiết
 ### 1. Nghiên cứu các tài liệu liên quan cảm biến xúc giác điện dung
 #### a. Link tài liệu : https://deepbluembedded.com/stm32-capacitive-touch-sensing-without-tsc/
