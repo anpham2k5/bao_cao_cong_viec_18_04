@@ -75,7 +75,7 @@ $$
 </div>
 
 
-#### c. Quá trình đo 
+#### d. Quá trình đo 
 ##### Sự thay đổi điện dung của cảm biến được xác định gián tiếp thông qua RC + Timer
 ##### Nguyên lí hoạt động
 - Phương pháp đo dựa trên nguyên lý nạp điện của mạch RC. Với điện trở R cố định và điện dung C của cảm biến thay đổi, hằng số thời gian của mạch là:
@@ -172,7 +172,7 @@ float Measure_RC_Time_US_Avg(uint16_t n)
 }
 ```
 
-#### d. Thí nghiệm đo điện dung C với các vật liệu và kích thước khác nhau
+### 3. Thí nghiệm đo điện dung C với các vật liệu và kích thước khác nhau
 Thông số thí nghiệm: https://docs.google.com/spreadsheets/d/12S2Da0dxASqYnYccrnSx9N-UnDkQImf4RA5wJKK-nlw/edit?usp=sharing
 
 
