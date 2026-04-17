@@ -1,7 +1,7 @@
 # Báo cáo tiến độ nghiên cứu ngày 18/04/2026
 ## A. Công việc đã làm
 - Nghiên cứu tài liệu liên quan đến cảm biến điện dung
-- Nghiên cứu cảm biến xúc giác điện dung
+- Ứng dụng làm cảm biến xúc giác điện dung
 - Thực hành các thí nghiệm đo dữ liệu cảm biến
 ## B. Khó Khăn
 - Ứng dụng phương pháp ADCtouch
@@ -49,9 +49,17 @@
 - Đối với một số dòng vi điều khiển nhất định như STM32F103C, bạn có thể bỏ qua bước dùng chân hy sinh vì thư viện cho phép sử dụng trực tiếp một kênh ADC đã được nối đất sẵn ở bên trong
 - Hoạt động của thư viện dựa trên việc cấp một khoảng thời gian trễ (mặc định tùy thuộc vào thiết bị) để sạc điện cho chân cảm ứng.
 - Khi khởi động thông qua hàm begin(), hệ thống sẽ tiến hành đọc dữ liệu tham chiếu làm nền tảng. Khi hàm read() được gọi, nó sẽ đọc giá trị đo được và tự động hiệu chỉnh thông qua dữ liệu tham chiếu ban đầu nhằm xác định chính xác trạng thái chạm. Trong thực tế, giá trị này thường dao động ở mức một chữ số (có thể âm hoặc dương) khi không có người chạm, và sẽ tăng lên ít nhất là 100 khi có tác động chạm
-### 2. Ứng dụng cảm biến xúc giác điện dung
+### 2. Ứng dụng làm cảm biến xúc giác điện dung
 #### a. Cấu trúc phần cứng
 - 2 miếng PCB đặt song song như 2 bản tụ và 1 lớp điện môi đàn hồi.
+- Miếng PCB được hàn dây như sau:
+
+<div align="center">
+
+![](image/hinh5.jpg)
+
+</div>
+
 - Lớp điện môi đàn hồi, dễ nén khi chịu lực, cho phép khoảng cách giữa hai bản cực thay đổi theo lực tác động.
 #### b. Nguyên lí điện dung
 - Khi có lực tác động, lớp điện môi đàn hồi sẽ biến dạng làm cho 2 bản tụ gần nhau hơn khiến điện dung tăng. 
@@ -165,7 +173,7 @@ float Measure_RC_Time_US_Avg(uint16_t n)
 ```
 
 #### d. Thí nghiệm đo điện dung C với các vật liệu và kích thước khác nhau
-Thông số thí nghiệm: https://docs.google.com/spreadsheets/d/1oDMeJInywCcWdUgZgRkDI_ojWt-54ljqLPaGA13Ekbc/edit?gid=211544715#gid=211544715
+Thông số thí nghiệm: https://docs.google.com/spreadsheets/d/12S2Da0dxASqYnYccrnSx9N-UnDkQImf4RA5wJKK-nlw/edit?usp=sharing
 
 
 
